@@ -1,0 +1,40 @@
+.AvatarImage {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  vertical-align: middle;
+  overflow: hidden;
+  flex: none;
+}
+
+.AvatarImage__Image {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.AvatarImage__TextContainer {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.AvatarImage--sm {
+  width: 24px;
+  height: 24px;
+}
+
+.AvatarImage--lg {
+  width: 64px;
+  height: 64px;
+}
+
+.AvatarImage--xlg {
+  width: 96px;
+  height: 96px;
+}

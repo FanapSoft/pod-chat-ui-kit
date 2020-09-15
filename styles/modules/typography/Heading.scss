@@ -1,0 +1,15 @@
+@import "../../mixin/resetStyle";
+
+.Heading {
+  @include resetStyleMixin();
+  color: $color-text;
+}
+
+.Heading--invert {
+  color: $color-text-invert;
+}
+
+h1.Heading {
+  font-size: 2em;
+  margin: .67em 0
+}

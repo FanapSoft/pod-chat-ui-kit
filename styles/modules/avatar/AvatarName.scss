@@ -1,0 +1,40 @@
+.AvatarName {
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: $font-size-base;
+  color: $color-text;
+  font-weight: $font-weight-bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.AvatarName--fontWeightNormal {
+  font-weight: normal;
+}
+
+.AvatarName--sm {
+  font-size: $font-size-sm;
+}
+
+.AvatarName--lg {
+  font-size: $font-size-lg;
+}
+
+.AvatarName--xlg {
+  font-size: $font-size-xlg;
+}
+
+.AvatarName--bottom {
+  display: block;
+  margin: 5px -5px;
+  max-width: none;
+  overflow: visible;
+  white-space: normal;
+  line-height: $line-height-base;
+  text-align: center;
+}
+
+.AvatarName--invert {
+  color: $color-text-invert;
+}

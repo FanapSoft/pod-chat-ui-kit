@@ -1,0 +1,70 @@
+{
+  "name": "raduikit",
+  "version": "0.6.8",
+  "description": "UI kit is an progressive ui components built in react and help you to build your web app",
+  "main": "src",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "doc": "start-storybook -p 6006",
+    "build-doc": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ACT1GMR/raduikit"
+  },
+  "keywords": [
+    "uikit",
+    "react",
+    "web",
+    "fanap"
+  ],
+  "author": "Behnam Salarinia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ACT1GMR/raduikit/issues"
+  },
+  "homepage": "https://github.com/ACT1GMR/raduikit#readme",
+  "devDependencies": {
+    "@storybook/addon-links": "^3.4.10",
+    "@storybook/addons": "^3.4.10",
+    "@storybook/react": "^3.4.10",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.0.7",
+    "json-loader": "^0.5.7",
+    "mini-css-extract-plugin": "^0.2.0",
+    "node-sass": "^4.9.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "resolve-url-loader": "^2.3.0",
+    "sass-loader": "^7.0.3",
+    "sass-resources-loader": "^1.3.3",
+    "storybook-addon-jsx": "^5.4.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "fancybox-scopial": "^3.5.2",
+    "jquery": "^3.3.1",
+    "prop-types": "^15.6.2",
+    "react-contenteditable": "^3.2.4",
+    "react-contextmenu": "^2.13.0",
+    "react-icons": "^3.9.0",
+    "react-infinite-scroller": "^1.2.4",
+    "sanitize-html": "^1.19.3"
+  }
+}

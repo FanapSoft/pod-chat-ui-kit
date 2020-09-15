@@ -1,0 +1,37 @@
+.Shape {
+  width: $icon-size-md;
+  height: $icon-size-md;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: $icon-size-md;
+}
+
+.Shape--sm {
+  width: $icon-size-sm;
+  height: $icon-size-sm;
+  line-height: $icon-size-sm;
+  font-size: $font-size-sm;
+}
+
+.Shape--lg {
+  width: $icon-size-lg;
+  height: $icon-size-lg;
+  line-height: $icon-size-lg;
+}
+
+.Shape--xlg {
+  width: $icon-size-xlg;
+  height: $icon-size-xlg;
+  line-height: $icon-size-xlg;
+}
+
+.Shape--colorPrimary {
+  background-color: $color-primary;
+  color: $color-text-invert;
+}
+
+.Shape--colorAccent {
+  background-color: $color-accent;
+  color: $color-text-invert;
+}

@@ -1,0 +1,145 @@
+.Button {
+  font: inherit;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+  background-color: $color-accent;
+  color: $color-text-invert;
+  margin: 8px;
+  padding: 8px 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  min-height: 36px;
+  border: none;
+  border-radius: 4px;
+  font-size: $font-size-base;
+  font-weight: bold;
+  user-select: none;
+}
+
+.Button:hover {
+  background-color: $color-accent-dark;
+}
+
+.Button::-moz-focus-inner {
+  border: 0;
+  padding: 0
+}
+
+//SIZES
+.Button--sm {
+  padding: 7px 8px;
+}
+
+.Button--lg {
+  padding: 8px 24px;
+}
+
+.Button--xlg {
+  padding: 9px 36px;
+}
+
+//PRIMARY
+.Button--colorPrimary {
+  background-color: $color-primary;
+}
+
+.Button--colorPrimary:hover {
+  background-color: $color-primary-dark;
+}
+
+//GRAY
+.Button--colorGray {
+  background-color: $color-gray;
+}
+
+.Button--colorGray:hover {
+  background-color: $color-gray-dark;
+}
+
+//GREEN
+.Button--colorGreen {
+  background-color: $color-green;
+}
+
+.Button--colorGreen:hover {
+  background-color: $color-green-dark;
+}
+
+//RED
+.Button--colorRed {
+  background-color: $color-red;
+}
+
+.Button--colorRed:hover {
+  background-color: $color-red-dark;
+}
+
+//YELLOW
+.Button--colorYellow {
+  background-color: $color-yellow;
+}
+
+.Button--colorYellow:hover {
+  background-color: $color-yellow-dark;
+}
+
+//BUTTON TYPE TEXT,OUTLINED
+.Button--text,
+.Button--outlined {
+  box-shadow: none;
+  background-color: transparent;
+  color: $color-accent;
+  &.Button--colorPrimary {
+    color: $color-primary;
+  }
+  &.Button--colorGray {
+    color: $color-gray;
+  }
+  &.Button--colorGreen {
+    color: $color-green;
+  }
+  &.Button--colorRed {
+    color: $color-red;
+  }
+  &.Button--colorYellow {
+    color: $color-yellow;
+  }
+}
+
+.Button--text:hover,
+.Button--outlined:hover {
+  background-color: rgba($color-accent, .08);
+  &.Button--colorPrimary {
+    background-color: rgba($color-primary, .08);
+  }
+  &.Button--colorGray {
+    background-color: rgba($color-gray, .08);
+  }
+  &.Button--colorGreen {
+    background-color: rgba($color-green, .08);
+  }
+  &.Button--colorRed {
+    background-color: rgba($color-red, .08);
+  }
+  &.Button--colorYellow {
+    background-color: rgba($color-yellow, .08);
+  }
+}
+
+.Button--outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+}
+
+.Button--disabled {
+  &.Button--text {
+    color: $color-text-light;
+  }
+}
+
+.Button--disabled:hover {
+  &.Button--text {
+    background-color: rgba($color-text-light, .08);
+  }
+}

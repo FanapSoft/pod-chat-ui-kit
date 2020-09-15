@@ -1,0 +1,20 @@
+.Paper {
+  padding: 10px;
+  line-height: $line-height-base;
+}
+
+.paper--hasShadow {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);
+}
+
+.Paper--colorBackgroundDark {
+  background-color: $color-background-dark;
+}
+
+.Paper--colorBackground {
+  background-color: $color-background;
+}
+
+.Paper--colorBackgroundLight {
+  background-color: $color-background-light;
+}

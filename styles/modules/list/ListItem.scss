@@ -1,0 +1,64 @@
+@import "../../mixin/resetStyle";
+
+.ListItem {
+  @include resetStyleMixin();
+  padding: 10px;
+}
+
+.ListItem--noPadding {
+  padding: 0;
+}
+
+.ListItem--selection {
+  cursor: pointer;
+  position: relative;
+}
+
+.ListItem--selection:hover {
+  background-color: $color-primary-light;
+}
+
+.ListItem--active {
+  background-color: $color-primary-light;
+}
+
+.ListItem--activeColorGray {
+  background-color: $color-gray !important;
+}
+
+.ListItem--activeColorGrayLight {
+  background-color: $color-gray-light !important;
+}
+
+.ListItem--activeColorGrayDark {
+  background-color: $color-gray-dark !important;
+}
+
+.ListItem--activeColorAccent {
+  background-color: $color-accent !important;
+}
+
+.ListItem--activeColorLight {
+  background-color: $color-accent-light !important;
+}
+
+.ListItem--activeColorDark {
+  background-color: $color-accent-dark !important;
+}
+
+.ListItem__Tick {
+  color: $color-white;
+  margin: 0 15px;
+  background-color: $color-accent;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.ListItem--invert {
+  &.ListItem--selection:hover {
+    background-color: $color-background;
+  }
+  &.ListItem--active {
+    background-color: $color-background;
+  }
+}

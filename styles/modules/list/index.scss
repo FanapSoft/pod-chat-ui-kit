@@ -1,0 +1,7 @@
+@import "../../mixin/resetStyle";
+
+.List {
+  @include resetStyleMixin();
+  outline: 0;
+  list-style: none outside none
+}

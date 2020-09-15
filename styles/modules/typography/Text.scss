@@ -1,0 +1,149 @@
+@import "../../mixin/resetStyle";
+
+.Text {
+  @include resetStyleMixin();
+  font-size: $font-size-base;
+  line-height: 2;
+  color: $color-text;
+  font-weight: normal;
+}
+
+.Text--noLineHeight {
+  line-height: 0;
+}
+
+.Text--link {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 2px solid $color-gray;
+  cursor: pointer;
+}
+
+.Text--invert {
+  color: $color-text-invert;
+}
+
+.Text--colorTextDark {
+  color: $color-text-dark;
+}
+
+.Text--colorGray {
+  color: $color-gray;
+}
+
+.Text--colorGrayLight {
+  color: $color-gray-light;
+}
+
+.Text--colorGrayDark {
+  color: $color-gray-dark;
+}
+
+.Text--colorAccent {
+  color: $color-accent;
+}
+
+.Text--colorAccentLight {
+  color: $color-accent-light;
+}
+
+.Text--colorAccentDark {
+  color: $color-accent-dark;
+}
+
+.Text--colorGreen {
+  color: $color-green;
+}
+
+.Text--colorGreenLight {
+  color: $color-green-light;
+}
+
+.Text--colorGreenDark {
+  color: $color-green-dark;
+}
+
+.Text--colorRed {
+  color: $color-red;
+}
+
+.Text--colorRedLight {
+  color: $color-red-light;
+}
+
+.Text--colorRedDark {
+  color: $color-red-dark;
+}
+
+.Text--colorYellow {
+  color: $color-yellow;
+}
+
+.Text--colorYellowLight {
+  color: $color-yellow;
+}
+
+.Text--colorYellowDark {
+  color: $color-yellow-dark;
+}
+
+.Text--inline {
+  display: inline;
+}
+
+.Text--linkClearStyle {
+  border: none;
+}
+
+.Text--xs {
+  font-size: $font-size-xsm;
+}
+
+.Text--sm {
+  font-size: $font-size-sm;
+}
+
+.Text--lg {
+  font-size: $font-size-lg;
+}
+
+.Text--xlg {
+  font-size: $font-size-xlg;
+}
+
+.Text--jumbo {
+  font-size: $font-size-jumbo;
+}
+
+.Text--bold {
+  font-weight: bold;
+}
+
+.Text--italic {
+  font-style: italic;
+}
+
+.Text--wordWrapBreakWord {
+  word-wrap: break-word;
+}
+
+.Text--wordWrapBreakSpaces {
+  word-wrap: break-spaces;
+}
+
+.Text--whiteSpacePreWrap {
+  white-space: pre-wrap;
+}
+
+.Text--whiteSpacePre {
+  white-space: pre;
+}
+
+.Text--whiteSpaceNoWrap {
+  white-space: nowrap;
+}
+
+.Text--overflowEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

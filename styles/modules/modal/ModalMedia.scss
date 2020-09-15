@@ -1,0 +1,9 @@
+@import "../../vendors/jquery.fancybox.scss";
+
+.fancybox-is-open .fancybox-bg {
+  opacity: 1;
+}
+
+.fancybox-caption {
+  font-family: $font-family;
+}

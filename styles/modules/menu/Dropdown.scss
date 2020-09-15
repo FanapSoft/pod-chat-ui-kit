@@ -1,0 +1,9 @@
+.Dropdown {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: $z-index-2;
+  width: 100%;
+  box-shadow: 0 0 1px $color-accent-dark;
+}

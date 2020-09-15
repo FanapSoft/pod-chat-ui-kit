@@ -1,0 +1,36 @@
+.Message {
+  color: $color-text;
+  font-size: $font-size-base;
+}
+
+.Message--invert {
+  color: $color-text-invert;
+}
+
+.Message--warn {
+  color: $color-accent;
+}
+
+.Message--error {
+  color: $color-red;
+}
+
+.Message--success {
+  color: $color-green;
+}
+
+.Message--sm {
+  font-size: $font-size-sm;
+}
+
+.Message--lg {
+  font-size: $font-size-lg;
+}
+
+.Message--xlg {
+  font-size: $font-size-xlg
+}
+
+.Message--jumbo {
+  font-size: $font-size-jumbo
+}

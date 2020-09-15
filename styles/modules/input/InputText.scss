@@ -1,0 +1,23 @@
+.InputText {
+  margin: 15px 0;
+  box-shadow: 0 2px 0 $color-text-light;
+}
+
+.InputText:hover {
+  box-shadow: 0 2px 0 $color-accent;
+}
+
+.InputText--focus {
+  box-shadow: 0 2px 0 $color-accent-dark;
+  &:hover {
+    box-shadow: 0 2px 0 $color-accent-dark;
+  }
+}
+
+.InputText__Input {
+  color: inherit;
+  font: inherit;
+  padding: 10px;
+  width: 100%;
+  border: none;
+}

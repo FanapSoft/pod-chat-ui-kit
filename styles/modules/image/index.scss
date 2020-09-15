@@ -1,0 +1,9 @@
+@import "../../mixin/resetStyle";
+
+.Image {
+  @include resetStyleMixin();
+}
+
+.Image--circular {
+  border-radius: 50%;
+}
