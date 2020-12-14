@@ -1,9 +1,9 @@
 import React, {PureComponent} from "react";
 import PropTypes from "prop-types";
-import style from "../../styles/modules/button/Button.scss";
 import classnames from "classnames";
-import Loading, {LoadingBlinkDots} from "../loading";
 import Container from "../container";
+import Loading, {LoadingBlinkDots} from "../loading";
+import style from "../../styles/modules/button/Button.scss";
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);

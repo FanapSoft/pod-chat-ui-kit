@@ -1,13 +1,14 @@
 // src/modal/ModalBody
 import React, {Component} from "react";
 import "../../styles/modules/modal/ModalMedia.scss";
+import fancyBox from "fancybox-scopial";
 import $ from "jquery";
 
 export default class ModalMedia extends Component {
 
   constructor(props) {
     super(props);
-    require("fancybox-scopial")(window, window.document, $);
+    fancyBox(window, window.document, $);
     this.close = this.close.bind(this);
   }
 
@@ -21,6 +22,10 @@ export default class ModalMedia extends Component {
 
   getFancyBox() {
     return $.fancybox;
+  }
+
+  getJqueryScope() {
+    return $;
   }
 
   render() {

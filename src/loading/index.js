@@ -1,8 +1,8 @@
 // src/loading/index
 import React, {Component} from "react";
-import style from "../../styles/modules/loading/index.scss";
 import classnames from "classnames";
 import Container from "../container";
+import style from "../../styles/modules/loading/index.scss";
 
 export default class Loading extends Component {
 

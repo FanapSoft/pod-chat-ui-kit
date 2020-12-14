@@ -81,7 +81,6 @@ export default class extends PureComponent {
       return;
     }
     current.scrollTop = 0;
-    console.log(this._currentScrollBottom, "GOTO TOP")
   }
 
   gotoElement(elementId) {
