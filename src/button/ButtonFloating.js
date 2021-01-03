@@ -14,6 +14,8 @@ export default class ButtonFloating extends PureComponent {
     disabled: PropTypes.bool,
     size: PropTypes.oneOf(["sm"]),
     color: PropTypes.oneOf(["accent", "primary", "gray", "white", "green", "red", "yellow"]),
+    dark: PropTypes.bool,
+    light: PropTypes.bool,
     position: PropTypes.object
   };
 
@@ -21,7 +23,9 @@ export default class ButtonFloating extends PureComponent {
     disabled: false,
     size: null,
     color: "accent",
-    position: {bottom: 0, left: 0}
+    position: {bottom: 0, left: 0},
+    dark: false,
+    light: false,
   };
 
   constructor(props) {
@@ -29,10 +33,18 @@ export default class ButtonFloating extends PureComponent {
   }
 
   render() {
-    let {disabled, size, color, position, ...other} = this.props;
-    let classNames = classnames({
+    let {disabled, size, color, position, dark, light,children, ...other} = this.props;
+    let colorClassNames = "";
+    if (color) {
+      colorClassNames = `Button--color${capitalizeFirstLetter(color)}`;
+      if (dark || light) {
+        colorClassNames += light ? "Light" : "Dark";
+      }
+    }
+    const classNames = classnames({
       [style.Button]: true,
       [style.ButtonFloating]: true,
+      [style[colorClassNames]]: colorClassNames,
       [style["Button--disabled"]]: disabled,
       [style["ButtonFloating--sm"]]: (size === "sm"),
       [style[`Button--color${capitalizeFirstLetter(color)}`]]: color
@@ -40,7 +52,7 @@ export default class ButtonFloating extends PureComponent {
     return (
       <button className={classNames} style={position} {...other}>
         <Container className={style.ButtonFloating__Icon}>
-          {this.props.children}
+          {children}
         </Container>
       </button>
     );

@@ -85,13 +85,19 @@ export default class InputTextArea extends PureComponent {
     preCaretRange.setEnd(range.endContainer, range.endOffset);
     const {childNodes} = preCaretRange.cloneContents();
     let cursorPoint = 0;
-    for (const child of childNodes) {
-      if (child.nodeType === 1) {
-        cursorPoint += child.outerHTML.length;
-      } else if (child.nodeType === 3) {
-        cursorPoint += child.textContent.length;
+    function recurFindNodeLength(childNodes) {
+      for (const child of childNodes) {
+        if (child.nodeType === 1) {
+          if(child.childNodes) {
+            recurFindNodeLength(child.childNodes);
+          }
+          cursorPoint += child.outerHTML.length;
+        } else if (child.nodeType === 3) {
+          cursorPoint += child.textContent.length;
+        }
       }
     }
+    recurFindNodeLength(childNodes);
     return cursorPoint;
   }
 
