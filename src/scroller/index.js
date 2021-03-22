@@ -53,18 +53,10 @@ export default class extends PureComponent {
     this._currentScrollBottom = 0;
   };
 
-  componentDidUpdate(oldProps) {
-    const {children: oldChildren} = oldProps;
-    const {children, checkForSnapping} = this.props;
-    if (checkForSnapping) {
-      if (oldChildren.props.children.length !== children.props.children.length) {
-        const current = ReactDOM.findDOMNode(this.scrollerNode.current);
-        const info = this.getInfo();
-        if (info.scrollTop <= 0) {
-          current.scrollTop = info.scrollHeight - this._currentScrollBottom;
-        }
-      }
-    }
+  checkForSnapping() {
+    const current = ReactDOM.findDOMNode(this.scrollerNode.current);
+    const info = this.getInfo();
+    current.scrollTop = info.scrollHeight - this._currentScrollBottom;
   }
 
   gotoBottom() {

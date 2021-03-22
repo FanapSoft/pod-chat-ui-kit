@@ -56,7 +56,7 @@ export default class InputText extends PureComponent {
   }
 
   render() {
-    const {value, onChange, placeholder, className, inputClassName, max} = this.props;
+    const {value, onChange, placeholder, className, inputClassName, max, ...other} = this.props;
     const {focus} = this.state;
     const classNames = classnames({
       [style.InputText]: true,
@@ -76,7 +76,9 @@ export default class InputText extends PureComponent {
                onFocus={this.onFocus}
                onBlur={this.onBlur}
                value={value}
-               placeholder={placeholder}/>
+               placeholder={placeholder}
+               {...other}
+        />
       </Container>
     );
   }

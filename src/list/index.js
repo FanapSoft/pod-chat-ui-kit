@@ -9,8 +9,9 @@ export default class List extends Component {
   }
 
   render() {
+    const {...other} = this.props;
     return (
-      <ul className={style.List}>
+      <ul className={style.List} {...other}>
         {this.props.children}
       </ul>
     );

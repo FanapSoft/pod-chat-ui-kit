@@ -2,6 +2,8 @@
 
 .ListItem {
   @include resetStyleMixin();
+  outline: 0;
+  list-style: none outside none;
   padding: 10px;
 }
 

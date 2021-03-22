@@ -31,7 +31,7 @@ export default class Image extends Component {
     });
     classNames = `${classNames} `;
     if (setOnBackground) {
-      return <Container className={className} style={{backgroundImage: `url(${src})`}}/>
+      return <Container className={className} style={{backgroundImage: `url(${src})`, ...this.props.style}}/>
     }
     return (
       <img className={`${classNames}${className || ""}`} alt={alt} src={src} {...other}>

@@ -171,7 +171,8 @@ export default class InputTextArea extends PureComponent {
           onChange={this.onInput}
           onKeyPress={onKeyPress}
           onKeyUp={onKeyUp}
-          onKeyDown={onKeyDown}/>
+          onKeyDown={onKeyDown}
+        />
       </Container>
     );
   }
