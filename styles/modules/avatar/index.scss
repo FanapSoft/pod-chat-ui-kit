@@ -1,4 +1,7 @@
 .Avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Avatar--left {
@@ -8,5 +11,6 @@
 
 .Avatar--inline {
   display: inline-flex;
+  flex-direction: row;
   align-items: center;
 }

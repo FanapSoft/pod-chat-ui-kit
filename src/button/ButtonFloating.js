@@ -33,7 +33,7 @@ export default class ButtonFloating extends PureComponent {
   }
 
   render() {
-    let {disabled, size, color, position, dark, light,children, ...other} = this.props;
+    let {disabled, size, color, position, dark, light, children, className, ...other} = this.props;
     let colorClassNames = "";
     if (color) {
       colorClassNames = `Button--color${capitalizeFirstLetter(color)}`;
@@ -47,7 +47,8 @@ export default class ButtonFloating extends PureComponent {
       [style[colorClassNames]]: colorClassNames,
       [style["Button--disabled"]]: disabled,
       [style["ButtonFloating--sm"]]: (size === "sm"),
-      [style[`Button--color${capitalizeFirstLetter(color)}`]]: color
+      [style[`Button--color${capitalizeFirstLetter(color)}`]]: color,
+      [className]: className
     });
     return (
       <button className={classNames} style={position} {...other}>
