@@ -11,9 +11,10 @@ export default class ShapeCircle extends Component {
   }
 
   render() {
+    const {children, ...other} = this.props;
     return (
-      <Container className={style.ShapeCircle}>
-        {this.props.children}
+      <Container className={style.ShapeCircle} {...other}>
+        {children}
       </Container>
     );
   }
